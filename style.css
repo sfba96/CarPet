@@ -1,0 +1,70 @@
+body {
+    background: black;
+}
+
+h1 {
+    font-family: 'Gugi', cursive;
+    position: absolute;
+    color: white;
+    font-size: 5em;
+    top: 20%;
+    left: 43%;
+}
+
+h3 {
+  font-family: 'Ubuntu Mono', monospace;
+  position: absolute;
+  color: white;
+  font-size: 2em;
+  top: 40%;
+  left: 46%;  
+    
+}
+
+p {
+  font-family: 'Exo 2', sans-serif;
+  position: fixed;
+  color: #1fefda;
+  font-size: 2.5em;    
+  top: 50%;
+  left: 48%;
+    text-align: center;
+   
+}
+
+/*dots animation is taken and modified from codepen*/
+@keyframes blink {
+    
+    0% {
+      opacity: .2;
+    }
+
+    20% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: .2;
+    }
+}
+
+.listening span {
+   
+    animation-name: blink;
+
+    animation-duration: 1.4s;
+
+    animation-iteration-count: infinite;
+
+    animation-fill-mode: both;
+}
+
+.listening span:nth-child(2) {
+
+    animation-delay: .2s;
+}
+
+.listening span:nth-child(3) {
+
+    animation-delay: .4s;
+}
